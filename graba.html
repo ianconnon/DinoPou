@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <script>
+  
+    let audioIN = { audio: true };
+
+    navigator.mediaDevices.getUserMedia(audioIN)
+      .then(function (mediaStreamObj) {
+        let audio = document.getElementById('audio');
+        const start = document.getElementById('start')
+        const stop = document.getElementById('stop')
+
+        start.addEventListener('click', function(){
+          audio.play()
+        })
+        stop.addEventListener('click', function(){
+          audio.pause()
+        })
+        if ("srcObject" in audio) {
+          audio.srcObject = mediaStreamObj;
+        }
+
+      })
+      .catch(function (err) {
+        console.log(err.name, err.message);
+      });
+  </script>
+</head>
+  
+<body style="background-color:rgb(101, 185, 17); ">
+  <header>
+    <h1>Record and Play Audio in JavaScript</h1>
+  </header>  
+  <audio id="audio" controls></audio>
+  <button id="start">Play</button>
+  <button id="stop">Stop</button>
+</body>
+  
+</html>

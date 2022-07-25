@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DinoPou</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/main.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+	<div class="page">
+		<header class="game-header">
+			<a href="kitchen.html"><i class="fa-solid fa-angle-left"></i></a>
+			<div class="part-title" id="game">Teatro</div>
+			<a href="kitchen.html"><i class="fa-solid fa-angle-right"></i></a>
+			<!-- <input class="color-picker" type="color"></input> -->
+		</header>
+		<div class="dino-container">
+			<audio controls id="audio" class="audio"></audio>
+			<audio controls id="blow" class="audio" src="static/blow.mp3"></audio>
+			<audio controls class="audio" id="audiochanges"></audio>
+			<img src="static/theater.png" class="background">
+			<img src="static/dino.png" id="dino" class="dino">
+			<img src="static/microphone.svg" class="microphone" id="stop">
+		</div>
+		<div class="actions">
+			<div class="activities">
+				<button class="activity" id="speak">
+					<i class="fa-solid fa-microphone-slash"></i>
+					<p>Micrófono</p>
+				</button>
+				<button class="activity" id="brush">
+					<img src="static/brush.png" class="brush" id="brush">
+					<p>Pincel</p>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="theater.js"></script>
+</body>
+</html>

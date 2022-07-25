@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DinoPou</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/main.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+
+	<div class="page">
+		<header class="game-header">
+			<a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
+			<div class="part-title" id="game">Cocina</div>
+			<a href="index.html"><i class="fa-solid fa-angle-right"></i></a>
+			<!-- <input class="color-picker" type="color"></input> -->
+		</header>
+		<div class="dino-container">
+			<audio controls id="audio" class="audio"></audio>
+			<audio controls id="blow" class="audio" src="static/blow.mp3"></audio>
+			<audio controls class="audio" id="audiochanges"></audio>
+			<img src="static/kitchen.png" class="background">
+			<img src="static/dino.png" id="dino" class="dino">
+		</div>
+		<div class="actions">
+			<div class="foods">
+				<div class="food" id="food1">
+					<img id="food1img" src="food/apple.png">
+					<p>Manzana</p>
+				</div>
+				<div class="food" id="food2">
+					<img id="food2img" src="food/cake.png">
+					<p>Torta</p>
+				</div>
+				<div class="food" id="food3">
+					<img id="food3img" src="food/cherry.png">
+					<p>Cereza</p>
+				</div>
+				<div class="food" id="food4">
+					<img id="food4img" src="food/donut.png">
+					<p>Dona</p>
+				</div>
+				<div class="food" id="food5">
+					<img id="food5img" src="food/ice-cream.png">
+					<p>Helado</p>
+				</div>
+				<div class="food" id="food6">
+					<img id="food6img" src="food/pear.png">
+					<p>Pera</p>
+				</div>
+				<div class="food" id="food7">
+					<img id="food7img" src="food/potato.png">
+					<p>Papas fritas</p>
+				</div>
+				<div class="food" id="food8">
+					<img id="food8img" src="food/sushi.png">
+					<p>Sushi</p>
+				</div>
+				<div class="food" id="food9">
+					<img id="food9img" src="food/table-fish.png">
+					<p>Tabla de pescados</p>
+				</div>
+				<div class="food" id="food10">
+					<img id="food10img" src="food/banana.png">
+					<p>Banana</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+	<script src="kitchen.js"></script>
+</body>
+</html>
